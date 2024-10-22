@@ -37,10 +37,9 @@ Let:
 - $( w_i )$ be the weight (allocation) of stock $( i )$  in the portfolio.
   
 $$ 
+E(R_p) = \sum_{i=1}^{n} w_i \cdot R_i 
+$$
 
-E(R_p) = \sum_{i=1}^{n} w_i \cdot(R_i )
-
-$$ 
 
 Where:
 
