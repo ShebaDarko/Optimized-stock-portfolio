@@ -6,7 +6,7 @@ Welcome to the **Portfolio Optimization** project! This repository aims to devel
 
 ## 🎯 Problem Statement
 
-You are tasked with building a portfolio of stocks that optimizes returns given an initial budget of **$1000**. The goal is to create a model that intelligently allocates this budget across a selection of stocks, taking into account their historical performance and risk factors.
+Bbuilding a portfolio of stocks that optimizes returns given an initial budget of **$1000**. The goal is to create a model that intelligently allocates this budget across a selection of stocks, taking into account their historical performance and risk factors.
 
 ### 📊 Data
 
@@ -41,3 +41,29 @@ Before you begin, ensure you have the following installed:
    ```bash
    git clone https://github.com/ShebaDarko/Optimized-stock-portfolio.git
    cd Optimized-stock-portfolio
+
+
+###  Running the API
+To run the Flask API, execute the following command:
+python src/api.py
+
+## 📖 Usage Instructions
+
+- Load the Jupyter notebook located in the `notebooks` directory for a detailed analysis of the stock portfolio optimization process.
+- Utilize the functions in `src/portfolio_optimization.py` for core logic and calculations related to portfolio optimization.
+- Use the API for quick predictions and to interface with your optimization logic programmatically.
+
+## 🤝 Contribution
+
+Contributions are welcome! Please feel free to fork the repository, create a new branch, and submit a pull request. Ensure to follow the project's coding guidelines.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 📝 Acknowledgements
+
+- [Flask](https://flask.palletsprojects.com/) - for building the web API.
+- [CVXPY](https://www.cvxpy.org/) - for convex optimization solutions.
+- [Pandas](https://pandas.pydata.org/) and [NumPy](https://numpy.org/) - for data manipulation and analysis.
+
