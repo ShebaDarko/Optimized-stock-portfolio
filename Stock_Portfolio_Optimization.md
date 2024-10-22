@@ -38,7 +38,7 @@ Let:
   
 $$ 
 
-E(R_p) = \sum_{i=1}^{n} w_i \cdot R_i 
+E(R_p) = \sum_{i=1}^{n} w_i \cdot(R_i )
 
 $$ 
 
