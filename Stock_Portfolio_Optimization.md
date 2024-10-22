@@ -64,11 +64,11 @@ Copy code
 The optimization problem can be framed as maximizing the expected return for a given level of risk. This leads to the following formulation:
 
 **Objective Function**: Maximize the return-to-risk ratio, which can be expressed as:
+$$
 
-\[
 \text{Maximize} \quad \frac{E(R_p)}{\sigma_p}
-\]
 
+$$
 **Subject to**:
 1. The sum of the weights must equal 1 (full allocation of the budget):
    \[
