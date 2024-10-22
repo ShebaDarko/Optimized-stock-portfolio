@@ -6,7 +6,7 @@ Welcome to the **Portfolio Optimization** project! This repository aims to devel
 
 ## 🎯 Problem Statement
 
-Bbuilding a portfolio of stocks that optimizes returns given an initial budget of **$1000**. The goal is to create a model that intelligently allocates this budget across a selection of stocks, taking into account their historical performance and risk factors.
+Building a portfolio of stocks that optimizes returns given an initial budget of **$1000**. The goal is to create a model that intelligently allocates this budget across a selection of stocks, taking into account their historical performance and risk factors.
 
 ### 📊 Data
 
