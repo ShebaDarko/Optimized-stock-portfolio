@@ -10,7 +10,7 @@ Building a portfolio of stocks that optimizes returns given an initial budget of
 
 ### 📊 Data
 
-Daily stock price data for a variety of stocks is provided to facilitate analysis and model training. You can download the dataset [here](https://drive.google.com/file/d/1vdougP5eBLb7geavZIt7QyXhLVq4ai4M/view?usp=sharing).
+Daily stock price data for a variety of stocks is provided to facilitate analysis and model training.
 
 ## 🛠️ Project Components
 
