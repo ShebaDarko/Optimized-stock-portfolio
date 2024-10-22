@@ -41,6 +41,9 @@ The expected return of the portfolio, \( E(R_p) \), can be defined as:
 E(R_p) = \sum_{i=1}^{n} w_i \cdot R_i
 \]
 
+$$
+E(R_p) = \sum_{i=1}^{n} w_i \cdot R_i
+$$
 Where:
 - \( n \) is the total number of stocks in the portfolio.
 
