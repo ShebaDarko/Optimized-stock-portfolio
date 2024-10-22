@@ -19,6 +19,81 @@ This project aims to build an optimized stock portfolio that maximizes returns g
 - **Mean-Variance Optimization (MVO)**: Based on Modern Portfolio Theory (MPT), this method balances expected returns against risk. Key steps include:
   - Calculating expected returns and the covariance matrix of stock prices.
   - Using quadratic programming to find the optimal asset allocation.
+ 
+    # Portfolio Optimization Explanation
+
+The goal of portfolio optimization is to find the best allocation of investments across a set of assets (stocks, in this case) to maximize returns for a given level of risk, or alternatively, to minimize risk for a given level of expected return. The two key components involved in this process are:
+
+1. **Expected Returns**: The anticipated return from each asset over a certain period.
+2. **Risk (Volatility)**: The variability of returns, often measured by the standard deviation of returns or by the covariance of the asset returns.
+
+## Mathematical Formulation
+
+### 1. Expected Returns
+
+Let:
+- \( R_i \) be the expected return of stock \( i \).
+- \( w_i \) be the weight (allocation) of stock \( i \) in the portfolio.
+
+The expected return of the portfolio, \( E(R_p) \), can be defined as:
+
+\[
+E(R_p) = \sum_{i=1}^{n} w_i \cdot R_i
+\]
+
+Where:
+- \( n \) is the total number of stocks in the portfolio.
+
+### 2. Portfolio Risk (Volatility)
+
+The risk of the portfolio can be described using the covariance matrix \( \Sigma \), which captures how the returns of the stocks move together. The portfolio variance \( \sigma^2_p \) is defined as:
+
+\[
+\sigma^2_p = \mathbf{w}^T \Sigma \mathbf{w}
+\]
+
+Where:
+- \( \mathbf{w} \) is a vector of weights \( [w_1, w_2, \ldots, w_n]^T \).
+- \( \Sigma \) is the covariance matrix of the asset returns.
+
+The portfolio volatility \( \sigma_p \) is simply the square root of the variance:
+
+\[
+\sigma_p = \sqrt{\sigma^2_p} = \sqrt{\mathbf{w}^T \Sigma \mathbf{w}}
+\]
+
+### 3. Optimization Problem
+
+The optimization problem can be framed as maximizing the expected return for a given level of risk. This leads to the following formulation:
+
+**Objective Function**: Maximize the return-to-risk ratio, which can be expressed as:
+
+\[
+\text{Maximize} \quad \frac{E(R_p)}{\sigma_p}
+\]
+
+**Subject to**:
+1. The sum of the weights must equal 1 (full allocation of the budget):
+   \[
+   \sum_{i=1}^{n} w_i = 1
+   \]
+2. No short selling (weights must be non-negative):
+   \[
+   w_i \geq 0 \quad \text{for all } i
+   \]
+
+## Implementation in the Code
+
+In the provided code, the optimization is performed using the following steps:
+
+1. **Define the Objective Function**: The function `portfolio_optimization` is defined to compute the negative return-to-risk ratio. This involves the calculations for both expected returns and volatility based on the weights.
+
+   ```python
+   def portfolio_optimization(weights, mean_returns, cov_matrix):
+       portfolio_return = np.dot(weights, mean_returns)  # E(R_p)
+       portfolio_volatility = np.sqrt(np.dot(weights.T, np.dot(cov_matrix, weights)))  # σ_p
+       return -portfolio_return / portfolio_volatility  # Minimize -E(R_p)/σ_p
+
 - **Libraries Used**: 
   - **Pandas** for data manipulation
   - **NumPy** for numerical computations
