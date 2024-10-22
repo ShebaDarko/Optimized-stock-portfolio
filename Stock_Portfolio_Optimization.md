@@ -34,38 +34,35 @@ The goal of portfolio optimization is to find the best allocation of investments
 Let:
 
 - $( R_i )$ be the expected return of stock $( i )$.
-- \( w_i \) be the weight (allocation) of stock \( i \) in the portfolio.
-- 
-$$
-[ E(R_p) = \sum_{i=1}^{n} w_i \cdot R_i ]
-
+- $( w_i )$ be the weight (allocation) of stock $( i )$  in the portfolio.
+  
 $$ 
 
-\E(R_p) = \sum_{i=1}^{n} w_i \cdot R_i 
+E(R_p) = \sum_{i=1}^{n} w_i \cdot R_i 
 
 $$ 
 
 Where:
 
-( n ) is the total number of stocks in the portfolio.
+$( n )$  is the total number of stocks in the portfolio.
 
 ### 2. Portfolio Risk (Volatility)
 
 The risk of the portfolio can be described using the covariance matrix \( \Sigma \), which captures how the returns of the stocks move together. The portfolio variance \( \sigma^2_p \) is defined as:
 
-\[
+$$
 \sigma^2_p = \mathbf{w}^T \Sigma \mathbf{w}
-\]
+$$
 
 Where:
-- \( \mathbf{w} \) is a vector of weights \( [w_1, w_2, \ldots, w_n]^T \).
-- \( \Sigma \) is the covariance matrix of the asset returns.
+- $( \mathbf{w} )$ is a vector of weights $( [w_1, w_2, \ldots, w_n]^T )$.
+- $( \Sigma )$ is the covariance matrix of the asset returns.
 
-The portfolio volatility \( \sigma_p \) is simply the square root of the variance:
+The portfolio volatility $( \sigma_p )$ is simply the square root of the variance:
 
-\[
+$$
 \sigma_p = \sqrt{\sigma^2_p} = \sqrt{\mathbf{w}^T \Sigma \mathbf{w}}
-\]
+$$
 
 Copy code
 ### 3. Optimization Problem
@@ -80,13 +77,14 @@ $$
 
 **Subject to**:
 1. The sum of the weights must equal 1 (full allocation of the budget):
-   \[
+   $$
    \sum_{i=1}^{n} w_i = 1
-   \]
-2. No short selling (weights must be non-negative):
-   \[
+   $$
+   
+3. No short selling (weights must be non-negative):
+   $%
    w_i \geq 0 \quad \text{for all } i
-   \]
+   $$
 
 ## Implementation in the Code
 
