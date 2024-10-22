@@ -76,9 +76,10 @@ $$
 
 **Subject to**:
 1. The sum of the weights must equal 1 (full allocation of the budget):
-   $$
-   \sum_{i=1}^{n} w_i = 1
-   $$
+  $$
+\sum_{i=1}^{n} w_i = 1
+$$
+
    
 3. No short selling (weights must be non-negative):
    $%
