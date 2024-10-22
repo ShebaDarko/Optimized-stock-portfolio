@@ -65,6 +65,7 @@ The portfolio volatility \( \sigma_p \) is simply the square root of the varianc
 \sigma_p = \sqrt{\sigma^2_p} = \sqrt{\mathbf{w}^T \Sigma \mathbf{w}}
 \]
 
+Copy code
 ### 3. Optimization Problem
 
 The optimization problem can be framed as maximizing the expected return for a given level of risk. This leads to the following formulation:
