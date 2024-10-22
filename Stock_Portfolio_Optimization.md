@@ -36,12 +36,13 @@ Let:
 - \( w_i \) be the weight (allocation) of stock \( i \) in the portfolio.
 
 The expected return of the portfolio, \( E(R_p) \), can be defined as:
-
+$$
 \[
 E(R_p) = \sum_{i=1}^{n} w_i \cdot R_i
 \]
-
 $$
+$$
+
 E(R_p) = \sum_{i=1}^{n} w_i \cdot R_i
 $$
 Where:
